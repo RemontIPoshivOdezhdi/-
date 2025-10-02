@@ -16,7 +16,7 @@
         }
 
         body {
-            font-family: 'Century Gothic', sans-serif;
+            font-family: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
             background: linear-gradient(135deg, #ffffff 0%, #f8fbff 100%);
             color: #2d2d2d;
             line-height: 1.6;
@@ -93,7 +93,7 @@
         }
 
         .logo {
-            font-size: 3.5rem;
+            font-size: 2.8rem;
             font-weight: 600;
             background: linear-gradient(135deg, #194674 0%, #172b48 100%);
             -webkit-background-clip: text;
@@ -105,14 +105,14 @@
 
         .logo::after {
             content: '✂️';
-            font-size: 2rem;
+            font-size: 1.8rem;
             position: absolute;
             right: -50px;
             top: 10px;
         }
 
         .tagline {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: #b2b2b2;
             margin-bottom: 1rem;
         }
@@ -148,7 +148,7 @@
         }
 
         .section-title {
-            font-family: 'Century Gothic', sans-serif;
+            font-family: 'Montserrat', 'Calibri', 'Arial', sans-serif;
             font-size: 2.5rem;
             color: #194674;
             margin-bottom: 2rem;
@@ -265,9 +265,10 @@
         .service-item::before {
             content: '•';
             color: #348dcc;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             position: absolute;
-            left: -1rem;
+            left: 0.5rem;
+            top: 1rem;
         }
 
         .service-item:hover {
@@ -281,9 +282,12 @@
 
         .service-name {
             flex: 1;
-            padding-right: 1rem;
+            padding-right: 0rem;
             font-weight: 500;
             color: #2d2d2d;
+            font-size: 0.8rem;
+            line-height: 1.4;
+            padding-left: 0.5rem;
         }
 
         .service-price {
@@ -296,9 +300,9 @@
         }
 
         .service-unit {
-            font-size: 0.9rem;
+            font-size: 0.75rem;
             color: #b2b2b2;
-            margin-left: 0.5rem;
+            margin-left: 0.3rem;
             font-weight: 400;
         }
 
@@ -333,7 +337,7 @@
 
         .contacts h2 {
             font-family: 'Century Gothic', sans-serif;
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             margin-bottom: 1.5rem;
             position: relative;
             z-index: 1;
@@ -350,7 +354,7 @@
         }
 
         .contact-info {
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin: 1.5rem 0;
             position: relative;
             z-index: 1;
@@ -363,7 +367,7 @@
 
         .contact-info i {
             color: #ffffff;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             min-width: 25px;
             text-align: center;
             margin-top: 0.1rem;
@@ -380,16 +384,16 @@
             }
 
             .logo {
-                font-size: 2.5rem;
+                font-size: 2.3rem;
             }
 
             .logo::after {
                 right: -40px;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
             }
 
             .section-title {
-                font-size: 2rem;
+                font-size: 1.4rem;
                 flex-direction: column;
                 gap: 0.5rem;
             }
@@ -404,7 +408,8 @@
             }
 
             .category-header h2 {
-                font-size: 1.5rem;
+                font-size: 1rem;
+                font-weight: 600;
             }
 
             .category-content {
@@ -415,6 +420,7 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 0.5rem;
+                padding: 1.5rem 0;
                 padding-left: 1rem;
             }
 
@@ -425,6 +431,9 @@
             .service-price {
                 align-self: flex-end;
                 margin-top: 0.5rem;
+                padding: 0.4rem 0.8rem;
+                background: rgba(38, 145, 224, 0.1);
+                border-radius: 15px;
             }
 
             .contacts {
@@ -433,7 +442,7 @@
             }
 
             .contacts h2 {
-                font-size: 2rem;
+                font-size: 1.8rem;
                 justify-content: center;
             }
 
@@ -447,7 +456,7 @@
 
             .contact-info i {
                 min-width: 20px;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 margin-top: 0.1rem;
             }
 
@@ -471,7 +480,7 @@
             
             .contact-info i {
                 min-width: 18px;
-                font-size: 1.1rem;
+                font-size: 0.9rem;
             }
         }
 
@@ -492,6 +501,15 @@
         ::-webkit-scrollbar-thumb:hover {
             background: linear-gradient(135deg, #fad3bb 0%, #f4a67b 100%);
         }
+		
+		.service-price {
+            padding: 0.2rem 0.6rem !important;
+            font-size: 0.75rem !important;
+       }
+
+.service-unit {
+    font-size: 0.65rem !important;
+}
     </style>
 </head>
 <body>
@@ -514,7 +532,7 @@
         <div class="section">
             <h2 class="section-title">
                 <span></span>
-                Украчивание изделий
+                Укорачивание изделий
                 <span></span>
             </h2>
             
@@ -536,7 +554,7 @@
                     <div class="service-item"><div class="service-name">Укоротить брюки из трикотажа(на спец.машинке)</div><div class="service-price">900 ₽<span class="service-unit">1 пара</span></div></div>
                 </div>
             </div>
-
+			
             <!-- Категория 2 -->
             <div class="service-category">
                 <div class="category-header" onclick="toggleCategory(this)">
@@ -840,7 +858,6 @@
                     <div class="service-item"><div class="service-name">Куртка на синтепоне</div><div class="service-price">6 800 ₽<span class="service-unit">1 шт</span></div></div>
 					<div class="service-item"><div class="service-name">Куртка на пуху</div><div class="service-price">8 200 ₽<span class="service-unit">1 шт</span></div></div>
                     <div class="service-item"><div class="service-name">Кожаная куртка</div><div class="service-price">7 500 ₽<span class="service-unit">1 шт</span></div></div>
-					
                 </div>
             </div>
             
@@ -855,7 +872,7 @@
                     <div class="service-item"><div class="service-name">Карман в рамку</div><div class="service-price">1 300 ₽<span class="service-unit">1 шт</span></div></div>
                 </div>
             </div>
-
+        </div>
         <!-- Раздел ремонт -->
         <div class="section">
             <h2 class="section-title">
@@ -962,7 +979,7 @@
 					<div class="service-item"><div class="service-name">В шубе</div><div class="service-price">6 300 ₽<span class="service-unit">1 шт</span></div></div>
                 </div>
             </div>
-
+        </div>
         <!-- Раздел ремонт -->
         <div class="section">
             <h2 class="section-title">
@@ -993,11 +1010,11 @@
                     <span class="arrow">▼</span>
                 </div>
                 <div class="category-content">
-                    <div class="service-item"><div class="service-name">А-силуэт</div><div class="service-price">1 200 ₽<span class="service-unit">1 изделие</span></div></div>
-                    <div class="service-item"><div class="service-name">Ампир</div><div class="service-price">1 900 ₽<span class="service-unit">1 изделие</span></div></div>
-					<div class="service-item"><div class="service-name">Пышное</div><div class="service-price">300 ₽<span class="service-unit">1 изделие</span></div></div>
-					<div class="service-item"><div class="service-name">Кружевное</div><div class="service-price">300 ₽<span class="service-unit">1 изделие</span></div></div>
-                    <div class="service-item"><div class="service-name">Рыбка</div><div class="service-price">700 ₽<span class="service-unit">1 изделие</span></div></div>
+                    <div class="service-item"><div class="service-name">А-силуэт</div><div class="service-price">1 300 ₽<span class="service-unit">1 изделие</span></div></div>
+                    <div class="service-item"><div class="service-name">Ампир</div><div class="service-price">1 300 ₽<span class="service-unit">1 изделие</span></div></div>
+					<div class="service-item"><div class="service-name">Пышное</div><div class="service-price">2 000 ₽<span class="service-unit">1 изделие</span></div></div>
+					<div class="service-item"><div class="service-name">Кружевное</div><div class="service-price">2 300 ₽<span class="service-unit">1 изделие</span></div></div>
+                    <div class="service-item"><div class="service-name">Рыбка</div><div class="service-price">1 000 ₽<span class="service-unit">1 изделие</span></div></div>
                 </div>
             </div>
             
@@ -1071,7 +1088,7 @@
 					<div class="service-item"><div class="service-name">Отпарить длинную фату</div><div class="service-price">600 ₽<span class="service-unit">1 изделие</span></div></div>
                 </div>
             </div>
-
+        </div>
         <!-- Раздел ремонт -->
         <div class="section">
             <h2 class="section-title">
@@ -1258,10 +1275,9 @@
 					<div class="service-item"><div class="service-name">Восстановление строчки на текстиле</div><div class="service-price">850 ₽<span class="service-unit">от 10 см</span></div></div>					
                 </div>
             </div>
-			
-			
-			
-        <div class="contacts">
+        </div>
+		
+		<div class="contacts">
             <h2>Контакты</h2>
             <div class="contact-info">
                 <i class='bx bx-map'></i>
